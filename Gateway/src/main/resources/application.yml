@@ -1,0 +1,18 @@
+
+server:
+  port: 8080
+
+spring:
+  application:
+    name: gateway
+  cloud:
+    gateway:
+      routes:
+        - id: employeeModule
+          uri: lb://employee-service
+          predicates:
+            - Path=/employee/**
+        - id: productModule
+          uri: lb://product-service
+          predicates:
+            - Path=/product/**

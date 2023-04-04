@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="discovery-server" />
+        <module name="Gateway" />
+        <module name="product-service" />
+        <module name="practiceTask1" />
+        <module name="order-service" />
+        <module name="shipping-service" />
+        <module name="JWT-Demo" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="discovery-server" target="1.8" />
+      <module name="Gateway" target="1.8" />
+      <module name="JWT-Demo" target="1.8" />
+      <module name="order-service" target="1.8" />
+      <module name="practiceTask1" target="1.8" />
+      <module name="product-service" target="1.8" />
+      <module name="shipping-service" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Gateway" options="-parameters" />
+      <module name="JWT-Demo" options="-parameters" />
+      <module name="discovery-server" options="-parameters" />
+      <module name="order-service" options="-parameters" />
+      <module name="practiceTask1" options="-parameters" />
+      <module name="product-service" options="-parameters" />
+      <module name="shipping-service" options="-parameters" />
+    </option>
+  </component>
+</project>
